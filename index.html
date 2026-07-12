@@ -2,227 +2,628 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:title" content="تنزيل تطبيقات مجاناً">
-    <meta property="og:description" content="جميع التطبيقات والألعاب فابور 100% للأندرويد والأيفون وبأحجام خفيفة جداً">
-    <meta property="og:type" content="website">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdo TECH - متجر التطبيقات والألعاب المجانية</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+    <title>ABDO-TECH | تحميل تطبيقات وألعاب</title>
+    <!-- إضافة أيقونات FontAwesome للأشكال -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- كود الإعلانات الخاص بك من Adsterra -->
-    <script src="https://pl30321796.effectivecpmnetwork.com/cb/ff/d5/cbffd5f07bce50d433d39459d7fba33a.js"></script>
+    <!-- كود الإعلان Popunder الخاص بك من الصورة -->
+    <script src="//pl30321796.effectivecpmnetwork.com/cb/ff/d5/cbffd5f07bce50d433d39459d7fba33a.js"></script>
 
     <style>
+        /* إعدادات الخطوط والألوان العامة */
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+
         * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: #0d0e17;
-            color: #ffffff;
             margin: 0;
             padding: 0;
-            direction: rtl;
-        }
-        .header-section {
-            text-align: center;
-            padding: 40px 20px 20px 20px;
-            background: linear-gradient(180deg, #16192b 0%, #0d0e17 100%);
-        }
-        .header-section h1 {
-            color: #ff9900;
-            font-size: 28px;
-            margin-bottom: 10px;
-            font-weight: 800;
-        }
-        .header-section p {
-            font-size: 15px;
-            color: #a0a5c1;
-            margin: 0;
-        }
-        
-        .ad-banner-container {
-            width: 90%;
-            max-width: 728px;
-            margin: 20px auto;
-            min-height: 90px;
-            background-color: #16192b;
-            border: 1px dashed #3f446e;
-            border-radius: 8px;
-            display: table;
-            text-align: center;
-        }
-        .ad-placeholder {
-            display: table-cell;
-            vertical-align: middle;
-            color: #535875;
-            font-size: 13px;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
         }
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        body {
+            background-color: #0d081b; 
+            color: #ffffff;
+            min-height: 100vh;
+            padding-bottom: 90px; 
         }
 
-        .section-title {
+        /* القائمة العلوية */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #160f29;
+            border-bottom: 1px solid #2d1f4e;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            background-color: #a855f7;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 20px;
-            color: #ff9900;
-            border-right: 4px solid #ff9900;
-            padding-right: 10px;
-            margin: 30px 0 20px 0;
         }
 
-        .store-grid {
-            text-align: center;
+        .logo-text h1 {
+            font-size: 16px;
+            font-weight: 900;
         }
 
-        .item-card {
-            display: inline-block;
-            vertical-align: top;
-            background: #16192b;
-            border: 2px solid #22263f;
-            border-radius: 16px;
+        .logo-text p {
+            font-size: 11px;
+            color: #a855f7;
+        }
+
+        .status-tag {
+            background-color: #10b981; 
+            color: white;
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* القسم الرئيسي */
+        .container {
             padding: 20px;
-            width: 280px;
-            margin: 10px;
-            text-align: center;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-        .item-card:hover {
-            transform: translateY(-5px);
-            border-color: #ff9900;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        .item-icon {
-            font-size: 50px;
+        .hero {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            background-color: #2d1f4e;
+            color: #c084fc;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            display: inline-block;
+            margin-bottom: 15px;
+            border: 1px solid #4c3285;
+        }
+
+        .hero h2 {
+            font-size: 22px;
+            line-height: 1.6;
             margin-bottom: 15px;
         }
-        
-        .whatsapp-color { color: #25d366; }
-        .instagram-color { color: #e1306c; }
-        .facebook-color { color: #1877f2; }
-        .tiktok-color { color: #ffffff; }
-        .game-color { color: #ff5500; }
 
-        .item-card h3 {
-            margin: 10px 0 5px 0;
-            font-size: 18px;
-            color: #ffffff;
+        .highlight {
+            color: #e879f9; 
         }
-        .item-card p {
+
+        .description {
+            color: #94a3b8;
             font-size: 13px;
-            color: #a0a5c1;
-            margin: 0 0 15px 0;
-            height: 36px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* صندوق البحث */
+        .search-box {
+            position: relative;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #64748b;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 15px 45px 15px 15px;
+            background-color: #160f29;
+            border: 1px solid #3b2a66;
+            border-radius: 12px;
+            color: white;
+            font-size: 14px;
+            outline: none;
+            text-align: right;
+        }
+
+        /* أقسام العناوين */
+        .section-title {
+            font-size: 16px;
+            margin: 30px 0 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #cbd5e1;
+        }
+
+        /* البطاقات */
+        .card {
+            background-color: #160f29;
+            border: 1px solid #2d1f4e;
+            border-radius: 16px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card-info {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* تصاميم خلفيات الأيقونات التطبيقات والألعاب */
+        .card-icon-box {
+            width: 55px;
+            height: 55px;
+            border-radius: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 26px;
+            flex-shrink: 0;
+        }
+        .ff-bg { background-color: #ff5722; color: white; }
+        .pes-bg { background-color: #0056b3; color: white; }
+        .gta-bg { background-color: #2e3131; color: #fbbf24; }
+        .wa-bg { background-color: #25d366; color: white; }
+        .fb-bg { background-color: #1877f2; color: white; }
+
+        .card-details h4 {
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+
+        .card-details p {
+            font-size: 12px;
+            color: #94a3b8;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 5px;
+        }
+
+        .tag {
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background-color: #2d1f4e;
+        }
+        .tag.purple { color: #e879f9; }
+        .tag.green { color: #10b981; }
+        .tag.yellow { color: #fbbf24; }
+
+        /* الأزرار البنفسجية المضيئة */
+        .download-btn {
+            width: 100%;
+            background: linear-gradient(90deg, #d946ef, #a855f7);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+        }
+
+        /* النافذة المنبثقة (Popup) */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(13, 8, 27, 0.85);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; 
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .popup-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .popup-box {
+            background-color: #160f29;
+            width: 100%;
+            max-width: 500px;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            border-top: 2px solid #a855f7;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .popup-overlay.active .popup-box {
+            transform: translateY(0);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: none;
+            border: none;
+            color: #64748b;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        .popup-icon {
+            font-size: 50px;
+            color: #a855f7;
+            margin-bottom: 15px;
+        }
+
+        .popup-icon.success { color: #10b981; }
+
+        .popup-box h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .popup-box p {
+            color: #94a3b8;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .counter-container { margin-bottom: 10px; }
+
+        .countdown-number {
+            font-size: 40px;
+            font-weight: 900;
+            color: #e879f9;
+        }
+
+        .time-left {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background-color: #2d1f4e;
+            border-radius: 10px;
             overflow: hidden;
         }
 
-        .btn-dl {
-            display: block;
-            text-align: center;
-            padding: 10px;
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #a855f7, #d946ef);
+            transition: width 1s linear;
+        }
+
+        /* زر التحميل الأخضر */
+        .final-download-btn {
+            display: inline-block;
+            width: 100%;
+            background-color: #10b981;
+            color: white;
             text-decoration: none;
-            border-radius: 8px;
+            padding: 14px;
+            border-radius: 25px;
             font-weight: bold;
-            font-size: 13px;
-            margin-top: 10px;
-            transition: opacity 0.2s;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
         }
-        .btn-dl:hover {
-            opacity: 0.9;
+
+        /* فوتر حقوق الملكية من الفيديو */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 11px;
+            color: #64748b;
+            line-height: 1.8;
+            border-top: 1px solid #160f29;
+            margin-top: 20px;
         }
-        .android-btn {
-            background-color: #3ddc84;
-            color: #000000;
+        .footer-highlight { color: #cbd5e1; }
+
+        /* شريط التنقل السفلي */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            background-color: #160f29;
+            border-top: 1px solid #2d1f4e;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 900;
         }
-        .ios-btn {
-            background-color: #ffffff;
-            color: #000000;
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #64748b;
+            text-decoration: none;
+            font-size: 11px;
+            gap: 4px;
         }
-        .game-btn {
-            background: linear-gradient(135deg, #ff9900, #ff5500);
-            color: #ffffff;
-        }
+
+        .nav-item.active { color: #a855f7; }
+        .nav-item i { font-size: 20px; }
     </style>
 </head>
 <body>
 
-    <div class="header-section">
-        <h1>منصة Abdo TECH المجانية للتحميل</h1>
-        <p>جميع التطبيقات والألعاب فابور 100% للأندرويد والأيفون وبأحجام خفيفة جداً</p>
-    </div>
+    <!-- الهيدر -->
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo-icon"><i class="fa-solid fa-gamepad"></i></div>
+            <div class="logo-text">
+                <h1>ABDO-TECH</h1>
+                <p>تحميل تطبيقات وألعاب فابور</p>
+            </div>
+        </div>
+        <div class="status-tag">نشط حالياً</div>
+    </header>
 
-    <div class="ad-banner-container">
-        <div class="ad-placeholder">
-            إعلان مدفوع
+    <main class="container">
+        <section class="hero">
+            <span class="badge">موقع ABDO-TECH الرسمي</span>
+            <h2>أفضل الألعاب والتطبيقات المفتوحة <br><span class="highlight">نزلها دابا فابور وبضغطة واحدة!</span></h2>
+            <p class="description">أهلاً بالدراري والدرية! هنا غتلقاو جميع الألعاب الشهيرة والتطبيقات المعدلة مجاناً بروابط مباشرة مية بالمية وآمنة لجهازكم.</p>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="اكتب اسم اللعبة أو التطبيق للبحث الفوري...">
+            </div>
+        </section>
+
+        <!-- 1. قسم الألعاب الأكثر شعبية -->
+        <section class="cards-section">
+            <h3 class="section-title"><i class="fa-solid fa-ghost"></i> الألعاب الأكثر شعبية</h3>
+            
+            <!-- Free Fire -->
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-icon-box ff-bg"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                    <div class="card-details">
+                        <h4>Garena Free Fire</h4>
+                        <p>تحديث لعبة فري فاير الأخير برابط مباشر APK جاهز للتثبيت الفوري.</p>
+                        <div class="tags">
+                            <span class="tag purple">تنزيل مجاني</span>
+                            <span class="tag green">جديد</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn" onclick="opendownloadPopup('freefire')">
+                    <i class="fa-solid fa-arrow-down"></i> تحميل اللعبة الآن
+                </button>
+            </div>
+
+            <!-- eFootball PES -->
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-icon-box pes-bg"><i class="fa-solid fa-futbol"></i></div>
+                    <div class="card-details">
+                        <h4>eFootball PES</h4>
+                        <p>لعبة كرة القدم الواقعية بيس مع آخر الانتقالات الرسمية مجاناً بالكامل.</p>
+                        <div class="tags">
+                            <span class="tag purple">تنزيل مجاني</span>
+                            <span class="tag yellow">شعبية</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn" onclick="opendownloadPopup('pes')">
+                    <i class="fa-solid fa-arrow-down"></i> تحميل اللعبة الآن
+                </button>
+            </div>
+
+            <!-- GTA V -->
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-icon-box gta-bg"><i class="fa-solid fa-car"></i></div>
+                    <div class="card-details">
+                        <h4>Grand Theft Auto V</h4>
+                        <p>نسخة الهاتف المخصصة لـ GTA V المحسنة لتعمل بسلاسة وبدون أي تقطيع.</p>
+                        <div class="tags">
+                            <span class="tag purple">تنزيل مجاني</span>
+                            <span class="tag yellow">مطلوبة</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn" onclick="opendownloadPopup('gtav')">
+                    <i class="fa-solid fa-arrow-down"></i> تحميل اللعبة الآن
+                </button>
+            </div>
+        </section>
+
+        <!-- 2. قسم التطبيقات الأساسية والمعدلة -->
+        <section class="cards-section">
+            <h3 class="section-title"><i class="fa-solid fa-mobile-screen-button"></i> التطبيقات الأساسية والمعدلة</h3>
+            
+            <!-- WhatsApp Plus / Gold -->
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-icon-box wa-bg"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="card-details">
+                        <h4>WhatsApp Plus / Gold</h4>
+                        <p>نسخة واتساب الذهبي بخصائص إخفاء حالة الاتصال وتحميل الفيديوهات مباشرة.</p>
+                        <div class="tags">
+                            <span class="tag purple">معدل</span>
+                            <span class="tag green">آمن</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn" onclick="opendownloadPopup('whatsapp')">
+                    <i class="fa-solid fa-arrow-down"></i> تحميل التطبيق الآن
+                </button>
+            </div>
+
+            <!-- Facebook Lite Plus -->
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-icon-box fb-bg"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="card-details">
+                        <h4>Facebook Lite Plus</h4>
+                        <p>تطبيق الفيسبوك الخفيف جداً لتوفير استهلاك باقة الإنترنت على الهواتف.</p>
+                        <div class="tags">
+                            <span class="tag purple">خفيف جداً</span>
+                            <span class="tag green">محدث</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn" onclick="opendownloadPopup('facebook')">
+                    <i class="facebook-lite.apk.apk"></i> تحميل التطبيق الآن
+                </button>
+            </div>
+        </section>
+
+        <!-- الفوتر من الفيديو -->
+        <footer class="footer">
+            <p class="footer-highlight">ABDO-TECH © 2026</p>
+            <p>جميع حقوق التطبيقات محفوظة لمطوريهم الأصليين. نحن نقدم روابط تحميل آمنة ومفتوحة المصدر فقط.</p>
+            <p>موقع ABDO-TECH الأصلي • بمساهمة الدراري والدرية</p>
+        </footer>
+    </main>
+
+    <!-- النافذة المنبثقة (Popup) -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <button class="close-btn" onclick="closePopup()">&times;</button>
+            <div class="popup-icon">
+                <i class="fa-solid fa-circle-down" id="popupMainIcon"></i>
+            </div>
+            <h4 id="popupTitle">جاري التجهيز...</h4>
+            <p id="popupStatusText">الرجاء الانتظار لبضع ثوانٍ بينما نقوم بفحص وتجهيز الملف لجهازك.</p>
+            
+            <div class="counter-container" id="counterContainer">
+                <div class="countdown-number" id="countdownNumber">5</div>
+                <p class="time-left">ثوانٍ متبقية</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+
+            <!-- زر التحميل النهائي -->
+            <a href="#" class="final-download-btn" id="finalDownloadBtn" target="_blank" style="display: none;">
+                اضغط هنا لبدء التنزيل الآن!
+            </a>
         </div>
     </div>
 
-    <div class="container">
-        
-        <h2 class="section-title">تطبيقات التواصل الاجتماعي الفابور</h2>
-        <div class="store-grid">
+    <!-- الشريط السفلي -->
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active"><i class="fa-solid fa-house"></i><span>الرئيسية</span></a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-gamepad"></i><span>الألعاب</span></a>
+        <a href="#" class="nav-item"><i class="fa-solid fa-layer-group"></i><span>التطبيقات</span></a>
+    </nav>
 
-            <div class="item-card">
-                <div class="item-icon whatsapp-color"><i class="fa-brands fa-whatsapp"></i></div>
-                <h3>واتساب (WhatsApp)</h3>
-                <p>راسل أصدقاءك بالفيديو والصوت مجاناً وبأحدث إصدار خفيف.</p>
-                <a href="whatsapp.apk" download class="btn-dl android-btn"><i class="fa-brands fa-android"></i> تنزيل للأندرويد (APK)</a>
-                <a href="https://apps.apple.com/ma/app/whatsapp-messenger/id310633997" target="_blank" class="btn-dl ios-btn"><i class="fa-brands fa-apple"></i> تحميل للأيفون (iOS)</a>
-            </div>
+    <script>
+        let countdownInterval;
 
-            <div class="item-card">
-                <div class="item-icon instagram-color"><i class="fa-brands fa-instagram"></i></div>
-                <h3>إنستغرام (Instagram Lite)</h3>
-                <p>تابع أحدث الريلز والصور مع أصدقائك فابور وخفيف.</p>
-                <a href="https://instagram-lite.ar.uptodown.com/android/download" download class="btn-dl android-btn"><i class="fa-brands fa-android"></i> تنزيل للأندرويد (APK)</a>
-                <a href="https://apps.apple.com/ma/app/instagram/id389801252" target="_blank" class="btn-dl ios-btn"><i class="fa-brands fa-apple"></i> تحميل للأيفون (iOS)</a>
-            </div>
+        // الروابط المباشرة لكل حاجة (تقدر تغيرها بروابط التحميل ديالك)
+        const downloadLinks = {
+            'freefire': 'https://play.google.com/store/apps/details?id=com.dts.freefireth',
+            'pes': 'https://play.google.com/store/apps/details?id=jp.konami.pesam',
+            'gtav': '#',
+            'whatsapp': '#',
+            'facebook': 'https://www.facebook.com/lite/'
+        };
 
-            <div class="item-card">
-                <div class="item-icon facebook-color"><i class="fa-brands fa-facebook"></i></div>
-                <h3>فيسبوك (Facebook Lite)</h3>
-                <p>نسخة فيسبوك خفيفة وسريعة بزاف وتناسب كل التلفونات.</p>
-                <a href="facebook-lite.apk.apk" download class="btn-dl android-btn"><i class="fa-brands fa-android"></i> تنزيل للأندرويد (APK)</a>
-                <a href="https://apps.apple.com/ma/app/facebook/id284882215" target="_blank" class="btn-dl ios-btn"><i class="fa-brands fa-apple"></i> تحميل للأيفون (iOS)</a>
-            </div>
+        const displayNames = {
+            'freefire': 'Garena Free Fire',
+            'pes': 'eFootball PES',
+            'gtav': 'Grand Theft Auto V',
+            'whatsapp': 'WhatsApp Plus / Gold',
+            'facebook': 'Facebook Lite Plus'
+        };
 
-            <div class="item-card">
-                <div class="item-icon tiktok-color"><i class="fa-brands fa-tiktok"></i></div>
-                <h3>تيك توك (TikTok Lite)</h3>
-                <p>شاهد الفيديوهات القصيرة والتريندات بسرعة وبلا لاغ.</p>
-                <a href="https://tiktok-lite.ar.uptodown.com/android/download" download class="btn-dl android-btn"><i class="fa-brands fa-android"></i> تنزيل للأندرويد (APK)</a>
-                <a href="https://apps.apple.com/ma/app/tiktok/id1235601863" target="_blank" class="btn-dl ios-btn"><i class="fa-brands fa-apple"></i> تحميل للأيفون (iOS)</a>
-            </div>
+        function opendownloadPopup(appKey) {
+            const overlay = document.getElementById('popupOverlay');
+            document.getElementById('popupTitle').innerText = displayNames[appKey] || 'تطبيق';
+            
+            const finalBtn = document.getElementById('finalDownloadBtn');
+            finalBtn.href = downloadLinks[appKey] || '#';
 
-        </div>
+            // إعادة تعيين الـ Popup
+            document.getElementById('popupMainIcon').className = "fa-solid fa-circle-down";
+            document.getElementById('popupMainIcon').parentElement.classList.remove('success');
+            document.getElementById('popupStatusText').innerText = "الرجاء الانتظار لبضع ثوانٍ بينما نقوم بفحص وتجهيز الملف لجهازك.";
+            document.getElementById('counterContainer').style.display = 'block';
+            finalBtn.style.display = 'none';
+            
+            overlay.classList.add('active');
+            
+            let timeLeft = 5;
+            const countdownNumElement = document.getElementById('countdownNumber');
+            const progressFill = document.getElementById('progressFill');
+            
+            countdownNumElement.innerText = timeLeft;
+            progressFill.style.width = '0%';
+            
+            setTimeout(() => { progressFill.style.width = '100%'; }, 50);
 
-        <h2 class="section-title">ألعاب خفيفة ومسلية (أقل من 5 ميغا)</h2>
-        <div class="store-grid">
+            clearInterval(countdownInterval);
+            
+            countdownInterval = setInterval(() => {
+                timeLeft--;
+                countdownNumElement.innerText = timeLeft;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(countdownInterval);
+                    showSuccessState();
+                }
+            }, 1000);
+        }
 
-            <div class="item-card">
-                <div class="item-icon game-color"><i class="fa-solid fa-soccer-ball"></i></div>
-                <h3>لعبة كرة قدم 2D</h3>
-                <p>مباراة كرة قدم سريعة وممتعة للتلفونات خفيفة جداً.</p>
-                <a href="football.apk" download class="btn-dl game-btn"><i class="fa-brands fa-android"></i> تنزيل للأندرويد (4.5MB)</a>
-                <a href="https://apps.apple.com/ma/app/score-hero/id1438513585" target="_blank" class="btn-dl ios-btn"><i class="fa-brands fa-apple"></i> قصر للأيفون (App Store)</a>
-            </div>
+        function showSuccessState() {
+            document.getElementById('counterContainer').style.display = 'none';
+            const mainIcon = document.getElementById('popupMainIcon');
+            mainIcon.className = "fa-solid fa-circle-check";
+            mainIcon.parentElement.classList.add('success');
+            
+            document.getElementById('popupStatusText').innerText = "تم فحص الملف بنجاح وهو آمن وجاهز للتحميل الآن!";
+            document.getElementById('finalDownloadBtn').style.display = 'block';
+        }
 
-            <div class="item-card">
-                <div class="item-icon game-color"><i class="fa-solid fa-car-burst"></i></div>
-                <h3>سباق السيارات السريع</h3>
-                <p>أقوى سباق ومغامرات وسط المدينة بحجم صغير.</p>
-                <a href="cars.apk" download class="btn-dl game-btn"><i class="fa-brands fa-android"></i> تنزيل للأندرويد (3.8MB)</a>
-                <a href="https://apps.apple.com/ma/app/subway-surfers/id512939461" target="_blank" class="btn-dl ios-btn"><i class="fa-brands fa-apple"></i> قصر للأيفون (App Store)</a>
-            </div>
+        function closePopup() {
+            document.getElementById('popupOverlay').classList.remove('active');
+            clearInterval(countdownInterval);
+        }
 
-        </div>
-
-    </div>
-
+        window.onclick = function(event) {
+            const overlay = document.getElementById('popupOverlay');
+            if (event.target == overlay) { closePopup(); }
+        }
+    </script>
 </body>
 </html>
